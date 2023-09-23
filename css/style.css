@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+*{
+    font-family: 'roboto slab';   
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 32px;
+}
+
+:root{
+    --primary-bg-color: #303030; 
+    --primary-text-color: #ffffff;
+    --dark-bg-color: #202020;
+    --light-bg-color: #444444;
+
+    /* for headings, buttons, links and highlights */
+    --accent-color-1: #ff5733; /** for drift*/
+    --accent-color-2: #00a8e0; /** for speed*/
+    --accent-color-3: #ffc107; /** for highlights*/
+
+    /* for buttons like "read more", "sign up", "subscribe", borders and dividers too */
+    --button-bg: #ff5733;
+    --button-text: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    max-width: auto;
+}
+/* procurar depois */
+bx{
+    cursor: pointer;
+}
+/*  */
+body {
+    background: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+header {
+    /* background-color: #e000bb; */
+    height: 170px;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+nav{
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding-top: 1px; */
+    justify-content: space-around;
+    flex-direction: column;
+}
+nav .logo{
+    color: var(--primary-text-color);
+    font-size: 74px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+nav .logo p{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+nav .nav-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto 0 0;
+}
+.logo-img{
+    width: 140px;
+    height: 140px;
+    object-position: center;
+}
+.nav-links{
+    /* position: relative; */
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    flex-direction: row;
+}
+
+.nav-links a{
+    /* position: relative; */
+    color: var(--accent-color-3);
+    display: flex;
+    margin: auto 20px;
+}
+.nav-links a:hover{
+    color: var(--accent-color-1);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+
